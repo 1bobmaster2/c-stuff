@@ -3,15 +3,15 @@
 void ReverseCharArray(char array[], int sizeOfArray)
 {
     int obieg = 0;
-    int correctSizeOfArray = sizeOfArray - 1;
+    int correctSizeOfArray = sizeOfArray -1;
+    int index = correctSizeOfArray;
     for (size_t i = correctSizeOfArray; i > 0; i--)
     {
-        array[obieg] = array[correctSizeOfArray];
+        array[obieg] = array[index];
+        printf("%s\n", array);
         obieg++;
-        correctSizeOfArray--;
+        index--;
     }
-
-    printf("%s\n", array);
     
 }
 

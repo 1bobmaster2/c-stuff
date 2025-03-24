@@ -15,6 +15,18 @@ void ReverseCharArray(char array[], int sizeOfArray)
     
 }
 
+void count(int input)
+{
+    printf("ok boss \n");
+
+
+    for (size_t i = 0; i <= input; i++)
+    {
+        printf("%d\n", i*input);
+    }
+    
+}
+
 
 int main() {
     // char yesimsigma[] = "a";
@@ -31,16 +43,11 @@ int main() {
     //     return 0;
     // }
 
-    char input[100];
-    int inputSize = 0;
-    printf("input the string to reverse \n");
-    scanf("%s", input);
-    printf("now input the size of the string \n");
-    scanf("%d", &inputSize);
-
-    ReverseCharArray(input, inputSize);
+    printf("hi print the multiplication of the skibidi number \n");
+    int input;
+    scanf("%d", &input);
     
-    
+    count(input);
 
     return 0;
 }
